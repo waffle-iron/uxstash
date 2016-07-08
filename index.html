@@ -1,9 +1,89 @@
----
-layout: default
-title: "Stashes"
-description: "User Experience curated design collections. A hand-picked glossary of theories, tools, and principles"
----
-<div id="theGrid">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UX Stash | User Experience curated design collections
+</title>
+  <meta name="description" content="User Experience curated design collections
+">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="UX Stash">
+  <meta property="og:url" content="http://uxstash.io/">
+  <meta property="og:description" content="User Experience curated design collections
+">
+  <meta property="og:site_name" content="UX Stash">
+  <meta property="og:image" content="">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://uxstash.io/">
+  <meta name="twitter:title" content="Stashes">
+  <meta name="twitter:description" content="User Experience curated design collections
+">
+  <meta name="twitter:image" content="">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/assets/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/assets/favicons/manifest.json">
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#263238">
+  <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#263238">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://use.typekit.net/ywl3qgt.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <link type="text/css" rel="stylesheet" href="/assets/application.css">
+  <link type="text/css" rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong>
+      browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>
+      to improve your experience.</p>
+  <![endif]-->
+  <div class="">
+    <div class="">
+      <div class="">
+        <button id="menu-toggle" class="menu-toggle"><span>Menu</span></button>
+        <div id="theSidebar" class="sidebar">
+          <button class="close-button fa fa-fw fa-close"></button>
+          <img src="/assets/ux_stash.svg" alt="UX Stash" />
+          <h1>User Experience curated design collections</h1>
+          <p>A hand-picked glossary of theories, tools, and principles</p>
+          <!-- <hr>
+          <h2>Latest resources (May 30, 2016):</h2>
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+          <h3></h3>
+          <h4></h4> -->
+        </div>
+      </div>
+      <main class="main" role="main">
+        <div id="theGrid">
   <section class="grid">
     <!-- <header class="top-bar">
       <h2 class="top-bar__headline">Latest articles</h2>
@@ -12,41 +92,2625 @@ description: "User Experience curated design collections. A hand-picked glossary
         <span class="dropdown">Popular</span>
       </div>
     </header> -->
-    {% for stash_hash in site.data.stashes %}
-    {% assign stash_entry = stash_hash[1] %}
+    
+    
     <a class="grid__item" href="#">
-      <h2 class="title title--preview">{{ stash_entry.stash }}</h2>
+      <h2 class="title title--preview">80/20 rule</h2>
       <div class="loader"></div>
-      <span class="category">{{ stash_entry.category }}</span>
+      <span class="category">Strategy</span>
       <div class="meta meta--preview">
-      {{ stash_entry.article | size }}
-        {% if stash_entry.article.size == 1  %}
-          article
-          {% else %}
+      2
+        
           articles
-        {% endif %}
+        
       </div>
     </a>
-    {% endfor %}
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Accessibility Analysis</h2>
+      <div class="loader"></div>
+      <span class="category">Development</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Adaptive Web Design (AWD)</h2>
+      <div class="loader"></div>
+      <span class="category">Development</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Aesthetic-Usability Effect</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Affordance</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Agile</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Anchoring</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Atomic Design</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Brainstorming</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Call to Action</h2>
+      <div class="loader"></div>
+      <span class="category">Architecture</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Card Sorting</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Chunking</h2>
+      <div class="loader"></div>
+      <span class="category">Architecture</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Cognitive Load</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Color Theory</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Competitive Analysis</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Constraint</h2>
+      <div class="loader"></div>
+      <span class="category">Development</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Consumer Journey Map</h2>
+      <div class="loader"></div>
+      <span class="category">Architecture</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Content Audit</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Content Strategy</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Cooperative Principle</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Ecosystem Map</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Ethnography</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Eye Tracking</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Features Roadmap</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Fitts’ Law</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Five Hat Racks</h2>
+      <div class="loader"></div>
+      <span class="category">Architecture</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Flexibility-Usability Tradeoff</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Focus Group</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Fogg’s Behaviour Model</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">The Fold</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Gestalt Laws of Grouping</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Graceful Degradation</h2>
+      <div class="loader"></div>
+      <span class="category">Development</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Grid</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Heuristic Evaluation</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Hick’s Law</h2>
+      <div class="loader"></div>
+      <span class="category">Development</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Hook Model</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Information Architecture</h2>
+      <div class="loader"></div>
+      <span class="category">Architecture</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Jira</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Kano Model</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Key Performance Indicators (KPI)</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Lean UX</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Legibility vs Readability</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Mapping</h2>
+      <div class="loader"></div>
+      <span class="category">Architecture</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Mental/Conceptual Models</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Metrics Analysis</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Minimum Viable Product (MVP)</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Mobile-First Design</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Moodboards</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Multivariate Testing</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Ockham’s Razor</h2>
+      <div class="loader"></div>
+      <span class="category">Architecture</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Omni-channel UX</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      4
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Paper Prototyping</h2>
+      <div class="loader"></div>
+      <span class="category">Development</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Participatory Design</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Pattern Library</h2>
+      <div class="loader"></div>
+      <span class="category">Development</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Personas</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      5
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Progressive Disclosure</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Progressive Enhancement</h2>
+      <div class="loader"></div>
+      <span class="category">Development</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Prototypes</h2>
+      <div class="loader"></div>
+      <span class="category">Development</span>
+      <div class="meta meta--preview">
+      1
+        
+          article
+          
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Quantitative Survey</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Rapid Prototyping</h2>
+      <div class="loader"></div>
+      <span class="category">Development</span>
+      <div class="meta meta--preview">
+      4
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Reciprocity</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Recognition over Recall</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Responsive Web Design</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      5
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Signal-to-Noise Ratio</h2>
+      <div class="loader"></div>
+      <span class="category">Architecture</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Sitemap</h2>
+      <div class="loader"></div>
+      <span class="category">Architecture</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Sketch App</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Sketches</h2>
+      <div class="loader"></div>
+      <span class="category">Architecture</span>
+      <div class="meta meta--preview">
+      5
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Skeuomorphism</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Stakeholders Interviews</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      4
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Storyboards</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Style Tiles</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Styleguides</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Task Analysis</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Taxonomies</h2>
+      <div class="loader"></div>
+      <span class="category">Architecture</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Think-Aloud Protocol</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">URL-First Design</h2>
+      <div class="loader"></div>
+      <span class="category">Architecture</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Usability</h2>
+      <div class="loader"></div>
+      <span class="category">Development</span>
+      <div class="meta meta--preview">
+      4
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Usability Testing</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Use Cases and Scenarios</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      4
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">User-Centered Design (UCD)</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">User Flow</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      4
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">User Stories</h2>
+      <div class="loader"></div>
+      <span class="category">Management</span>
+      <div class="meta meta--preview">
+      5
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Value Proposition</h2>
+      <div class="loader"></div>
+      <span class="category">Strategy</span>
+      <div class="meta meta--preview">
+      2
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Visual Weight</h2>
+      <div class="loader"></div>
+      <span class="category">Design</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Web Accessibility</h2>
+      <div class="loader"></div>
+      <span class="category">Development</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
+    
+    <a class="grid__item" href="#">
+      <h2 class="title title--preview">Wireframes</h2>
+      <div class="loader"></div>
+      <span class="category">Development</span>
+      <div class="meta meta--preview">
+      3
+        
+          articles
+        
+      </div>
+    </a>
+    
   </section>
   <section class="content">
     <div class="scroll-wrap">
-      {% for stash_hash in site.data.stashes %}
-      {% assign stash_entry = stash_hash[1] %}
+      
+      
       <article class="content__item">
-        <span class="category category--full">{{ stash_entry.category }}</span>
-        <h2 class="title title--full">{{ stash_entry.stash }}</h2>
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">80/20 rule</h2>
         <div class="meta meta--full">
         </div>
-        <p>{{ stash_entry.description }}</p>
+        <p>The Pareto principle (also known as the 80–20 rule, the law of the vital few, and the principle of factor sparsity) states that, for many events, roughly 80% of the effects come from 20% of the causes.</p>
         <h3 class="title">Resources</h3>
-        {% for stash_url in stash_entry.article %}
-        <h4><a href="{{ stash_url.url }}" target="_blank">{{ stash_url.title }}</a></h4>
-        <p>{{ stash_url.source }}</p>
-        {% endfor %}
+        
+        <h4><a href="http://northerndiv.com/improving-ux-80-20-rule/" target="_blank">Improving UX with the 80/20 rule</a></h4>
+        <p>http://northerndiv.com/</p>
+        
+        <h4><a href="http://www.webdesignerdepot.com/2011/02/the-8020-rule-applied-to-web-design/" target="_blank">The 80/20 Rule Applied to Web Design</a></h4>
+        <p>WebdesignerDepot</p>
+        
       </article>
-      {% endfor %}
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Development</span>
+        <h2 class="title title--full">Accessibility Analysis</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A study to measure how the website is easy for everyone to use, regardless of their special needs. It could be done by specific tools, following the W3C guideline or even by an usability test.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.w3.org/wiki/Accessibility_testing" target="_blank">Accessibility testing</a></h4>
+        <p>W3C</p>
+        
+        <h4><a href="http://www.tutorialspoint.com/software_testing_dictionary/accessibility_testing.htm" target="_blank">What is accessibility Testing?</a></h4>
+        <p>Tutorials Point</p>
+        
+        <h4><a href="http://jimthatcher.com/testing.htm" target="_blank">Web Accessibility Testing</a></h4>
+        <p>jimthatcher.com</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Development</span>
+        <h2 class="title title--full">Adaptive Web Design (AWD)</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Adaptive websites adapt to the width of the browser at a specific points. In other words, the website is only concerned about the browser being a specific width, at which point it adapts the layout.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.sitepoint.com/moving-beyond-responsive-web-adaptive-web/" target="_blank">Moving Beyond the Responsive Web to the Adaptive Web</a></h4>
+        <p>SitePoint</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Aesthetic-Usability Effect</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>The aesthetic usability effect is where a user will perceive an attractive product as easier to use than an ugly one.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://usabilityfriction.com/2010/03/30/aesthetic-usability-effect/" target="_blank">Aesthetic Usability Effect</a></h4>
+        <p>Usability Friction</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Affordance</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A situation where an object’s sensory characteristics intuitively imply its functionality and use.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.uxbooth.com/articles/foundations-of-affordances/" target="_blank">Foundations of Affordances</a></h4>
+        <p>UX Booth</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">Agile</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Agile software development is a set of principles for software development in which requirements and solutions evolve through collaboration between self-organizing, cross-functional teams. </p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://agilealliance.org/" target="_blank">Agile Alliance</a></h4>
+        <p>Agile Alliance</p>
+        
+        <h4><a href="http://www.inrhythm.com/scrum_diagram/index.html" target="_blank">The Scrum Framework</a></h4>
+        <p>InRhythm</p>
+        
+        <h4><a href="http://blog.standupti.me/post/126647667809/perfect-daily-standup" target="_blank">The Definitive Guide for the Perfect Daily Standup [with 9 actionable tips]</a></h4>
+        <p>Standup Time</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Anchoring</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Incorporating a test-driven, semantic, live style guide into your process to establish, enforce, and evolve your design language.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://uxmag.com/articles/anchoring-your-design-language-in-a-live-style-guide" target="_blank">Anchoring Your Design Language in a Live Style Guide</a></h4>
+        <p>UX Magazine</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Atomic Design</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A methodology for creating design systems.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank">Atomic Design</a></h4>
+        <p>bradfrost.com</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">Brainstorming</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Brainstorming is a group creativity technique by which efforts are made to find a conclusion for a specific problem by gathering a list of ideas spontaneously contributed by its members.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://en.wikipedia.org/wiki/Brainstorming" target="_blank">Brainstorming</a></h4>
+        <p>Wikipedia</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Architecture</span>
+        <h2 class="title title--full">Call to Action</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>In marketing, a call to action (CTA) is an instruction to the audience to provoke an immediate response, usually using an imperative verb such as “call now”, “find out more” or “visit a store today”.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://en.wikipedia.org/wiki/Call_to_action_(marketing)" target="_blank">Call to action (marketing)</a></h4>
+        <p>Wikipedia</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Card Sorting</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Card sorting is a simple technique in user experience design where a group of subject experts or “users”, however inexperienced with design, are guided to generate a category tree or folksonomy. It is a useful approach for designing information architecture, workflows, menu structure, or web site navigation paths.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://en.wikipedia.org/wiki/Card_sorting" target="_blank">Card sorting</a></h4>
+        <p>Wikipedia</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Architecture</span>
+        <h2 class="title title--full">Chunking</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Chunking is a method of presenting information which splits concepts into small pieces or “chunks” of information to make reading and understanding faster and easier. Chunking is especially useful for material presented on the web because readers tend to scan for specific information on a web page rather than read the page sequentially.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://en.wikipedia.org/wiki/Chunking_(writing)" target="_blank">Chunking (writing)</a></h4>
+        <p>Wikipedia</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">Cognitive Load</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>The amount of mental processing power needed to use your site, affects how easily users find content and complete tasks.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.nngroup.com/articles/minimize-cognitive-load/" target="_blank">Minimize Cognitive Load to Maximize Usability</a></h4>
+        <p>Nielsen Norman Group</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Color Theory</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A body of practical guidance to color mixing and the visual effects of a specific color combination.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.usertesting.com/blog/2014/12/02/color-ux-conversion-rates/" target="_blank">A Guide to Color, UX, and Conversion Rates</a></h4>
+        <p>UserTesting</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Competitive Analysis</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Data on what works well or poorly on other sites saves you from implementing useless features and guides UX investments to features that your users need.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.nngroup.com/articles/competitive-usability-evaluations/" target="_blank">Competitive Usability Evaluations: Learning from Your Competition</a></h4>
+        <p>Nielsen Norman Group</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Development</span>
+        <h2 class="title title--full">Constraint</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>The concept of constraints in design can be defined as the practice of limiting user actions on a system. Constraints limit the actions that can be performed by the user, thus increasing the usability of the design and reducing the likelihood of operator error.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.uxbooth.com/articles/breaking-constraints/" target="_blank">Breaking the Constraints</a></h4>
+        <p>UX Booth</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Architecture</span>
+        <h2 class="title title--full">Consumer Journey Map</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A customer journey map tells the story of the customer’s experience: from initial contact, through the process of engagement and into a long-term relationship.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.uxmatters.com/mt/archives/2011/09/the-value-of-customer-journey-maps-a-ux-designers-personal-journey.php" target="_blank">The Value of Customer Journey Maps: A UX Designer’s Personal Journey</a></h4>
+        <p>UX Matters</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">Content Audit</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>The activity of checking all of the content on a website, and compiling it into a big list.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://uxmastery.com/how-to-conduct-a-content-audit/" target="_blank">How to Conduct A Content Audit</a></h4>
+        <p>UX Mastery</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Content Strategy</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Content strategy refers to the planning, development, and management of content—written or in other media. The term is particularly common in web development since the late 1990s. It is a recognized field in user experience design, but also draws interest from adjacent communities such as content management, business analysis, and technical communication.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://en.wikipedia.org/wiki/Content_strategy" target="_blank">Content strategy</a></h4>
+        <p>Wikipedia</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">Cooperative Principle</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>People relate to computer interactions much like human conversation, so observing normal conversational rules is a useful design tactic.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://uxmag.com/articles/ux-design-as-two-way-conversation" target="_blank">UX Design as a Two-Way Conversation</a></h4>
+        <p>UX Magazine</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Ecosystem Map</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>An ecosystem is the term given to a set of products, services, and people that function together in a symbiotic way. </p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.uxbooth.com/articles/designing-digital-strategies-part-1-cartography/" target="_blank">Designing Digital Strategies, Part 1: Cartography</a></h4>
+        <p>UX Booth</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Ethnography</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Ethnographic field research involves the study of groups and people as they go about their everyday lives.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.uxmatters.com/mt/archives/2010/06/ethnography-in-ux.php" target="_blank">Ethnography in UX</a></h4>
+        <p>UX Matters</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Eye Tracking</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Eye-tracking research provides designers with a blueprint of sorts to guide them on the priorities with which site visitors generally absorb the information on any given site.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/" target="_blank">F-Shaped Pattern For Reading Web Content</a></h4>
+        <p>Nielsen Norman Group</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">Features Roadmap</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A plan for the future actions of the team. It could be on a spreadsheet, post its or timeline.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.userzoom.com/agile-ux-research-and-testing/getting-a-plan-together-creating-a-ux-roadmap-for-your-a-team/" target="_blank">Getting a Plan Together: Creating a UX Roadmap for Your A-Team</a></h4>
+        <p>User Zoom</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Fitts’ Law</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>This scientific law predicts that the time required to rapidly move to a target area is a function of the ratio between the distance to the target and the width of the target.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://en.wikipedia.org/wiki/Fitts%27s_law" target="_blank">Fitts's law</a></h4>
+        <p>Wikipedia</p>
+        
+        <h4><a href="http://www.usabilityfirst.com/glossary/fitts-law/" target="_blank">Glossary: Fitts’ Law</a></h4>
+        <p>Usability First</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Architecture</span>
+        <h2 class="title title--full">Five Hat Racks</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>The Five Hat Racks was first developed by Richard Saul Wurman in his book Information Anxiety. In a nutshell, there are 5 ways to organise information: By Location, Alphabet, Time, Category and Continuum.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://usabilityfriction.com/2009/09/29/five-hat-racks/" target="_blank">Five Hat Racks</a></h4>
+        <p>Usability Friction</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">Flexibility-Usability Tradeoff</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>The flexibility-usability tradeoff is a design principle maintaining that, as the flexibility of a system increases, its usability decreases. The tradeoff exists because accommodating flexibility requires satisfying a larger set of requirements, which results in complexity and usability compromises</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://crosssquare.co.uk/flexibility-usability-tradeoff/" target="_blank">Flexibility-Usability Tradeoff</a></h4>
+        <p>CrossSquare</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Focus Group</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A form of qualitative research in which a group of people are asked about their perceptions, opinions, beliefs, and attitudes towards a product, service, concept, advertisement, idea, or packaging.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.nngroup.com/articles/focus-groups/" target="_blank">The Use and Misuse of Focus Groups</a></h4>
+        <p>Nielsen Norman Group</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Fogg’s Behaviour Model</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>The Fogg Behavior Model shows that three elements must converge at the same moment for a behavior to occur: Motivation, Ability, and Trigger. When a behavior does not occur, at least one of those three elements is missing. </p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.behaviormodel.org/" target="_blank">What Causes Behavior Change?</a></h4>
+        <p>BJ Fogg's Behavior Model</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">The Fold</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>What is visible on the page without requiring any action is what encourages us to scroll.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.nngroup.com/articles/page-fold-manifesto/" target="_blank">The Fold Manifesto: Why the Page Fold Still Matters</a></h4>
+        <p>Nielsen Norman Group</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Gestalt Laws of Grouping</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>The Principles of grouping (or Gestalt laws of grouping) are a set of principles in psychology, first proposed by Gestalt psychologists to account for the observation that humans naturally perceive objects as organized patterns and objects.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/" target="_blank">Design Principles: Visual Perception And The Principles Of Gestalt</a></h4>
+        <p>Smashing Magazine</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Development</span>
+        <h2 class="title title--full">Graceful Degradation</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>The ability of a computer, machine, electronic system or network to maintain limited functionality even when a large portion of it has been destroyed or rendered inoperative. The purpose of graceful degradation is to prevent catastrophic failure.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://zurb.com/word/graceful-degradation" target="_blank">Graceful Degradation</a></h4>
+        <p>Zurb University</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Grid</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>In graphic design, a grid is a structure (usually two-dimensional) made up of a series of intersecting straight (vertical, horizontal, and angular) or curved guide lines used to structure content.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.creativebloq.com/web-design/grid-theory-41411345" target="_blank">The designer's guide to grid theory</a></h4>
+        <p>Creative Bloq</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Heuristic Evaluation</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A usability inspection method for computer software that helps to identify usability problems in the user interface (UI) design. It specifically involves evaluators examining the interface and judging its compliance with recognized usability principles.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">10 Usability Heuristics for User Interface Design</a></h4>
+        <p>Nielsen Norman Group</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Development</span>
+        <h2 class="title title--full">Hick’s Law</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Hick's law, or the Hick–Hyman Law, named after British and American psychologists William Edmund Hick and Ray Hyman, describes the time it takes for a person to make a decision as a result of the possible choices he or she has: increasing the number of choices will increase the decision time logarithmically.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.smashingmagazine.com/2012/02/redefining-hicks-law/" target="_blank">Redefining Hick’s Law</a></h4>
+        <p>Smashing Magazine</p>
+        
+        <h4><a href="http://uxmyths.com/post/712569752/myth-more-choices-and-features-result-in-higher-satisfac" target="_blank">Myth 12: More choices and features result in higher satisfaction</a></h4>
+        <p>UX Myths</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Hook Model</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A four-step process companies use to hook users and form habits among them. The four parts of the model include: trigger, action, investment and variable reward.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://studio.uxpin.com/blog/hook-users-habit-forming-ux-design/" target="_blank">How to Hook Users With Habit-Forming UX Design</a></h4>
+        <p>UX Pin</p>
+        
+        <h4><a href="https://uxmag.com/articles/how-to-manufacture-desire" target="_blank">How to Manufacture Desire</a></h4>
+        <p>UX Magazine</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Architecture</span>
+        <h2 class="title title--full">Information Architecture</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Information architecture (IA) is the structural design of shared information environments; the art and science of organizing and labelling websites, intranets, online communities and software to support usability and findability.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.usability.gov/what-and-why/information-architecture.html" target="_blank">Information Architecture Basics</a></h4>
+        <p>Usability.gov</p>
+        
+        <h4><a href="http://www.jjg.net/ia/visvocab/" target="_blank">A visual vocabulary for describing information architecture and interaction design</a></h4>
+        <p>Jesse James Garrett</p>
+        
+        <h4><a href="http://www.uxbooth.com/articles/complete-beginners-guide-to-information-architecture/" target="_blank">Complete Beginner’s Guide to Information Architecture</a></h4>
+        <p>UX Booth</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">Jira</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Jira is a proprietary issue tracking product, developed by Atlassian. It provides bug tracking, issue tracking, and project management functions.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.atlassian.com/software/jira" target="_blank">Jira Software</a></h4>
+        <p>Atlassian</p>
+        
+        <h4><a href="http://blogs.atlassian.com/blog-cat/jira/" target="_blank">Jira Articles</a></h4>
+        <p>Atlassian Blogs</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Kano Model</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>The Kano model is a theory of product development and customer satisfaction developed in the 1980s by Professor Noriaki Kano, which classifies customer preferences into five categories.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.kanomodel.com/" target="_blank">What is the Kano Model?</a></h4>
+        <p>Kano Model</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Key Performance Indicators (KPI)</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A Key Performance Indicator is a measurable value that demonstrates how effectively a company is achieving key business objectives. Organizations use KPIs at multiple levels to evaluate their success at reaching targets.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.ap-institute.com/what-is-a-key-performance-indicator.aspx" target="_blank">What is a Key Performance Indicator (KPI)?</a></h4>
+        <p>Advanced Performance Institute</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Lean UX</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Lean UX is a set of principles that may be used to guide you to better, more desirable solutions for users. It's not a process in which each tool is rigidly applied.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.smashingmagazine.com/2011/03/lean-ux-getting-out-of-the-deliverables-business/" target="_blank">Lean UX: Getting Out Of The Deliverables Business</a></h4>
+        <p>Smashing Magazine</p>
+        
+        <h4><a href="https://www.smashingmagazine.com/2014/01/lean-ux-manifesto-principle-driven-design/" target="_blank">The Lean UX Manifesto: Principle-Driven Design</a></h4>
+        <p>Smashing Magazine</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Legibility vs Readability</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Users won’t read web content unless the text is clear, the words and sentences are simple, and the information is easy to understand. You can test all of this.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://webdesign.tutsplus.com/articles/typographic-readability-and-legibility--webdesign-12211" target="_blank">Typographic Readability and Legibility</a></h4>
+        <p>Envato Tutsplus</p>
+        
+        <h4><a href="https://www.nngroup.com/articles/legibility-readability-comprehension/" target="_blank">Legibility, Readability, and Comprehension: Making Users Read Your Words</a></h4>
+        <p>Nielsen norman Group</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Architecture</span>
+        <h2 class="title title--full">Mapping</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>One page – we’ll get an end-to-end view of a users experience in context, which we can then use to understand, justify and prioritise our approach.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://uxmastery.com/ux-marks-the-spot-mapping-the-user-experience/" target="_blank">'UX' Marks the Spot: Mapping the User Experience</a></h4>
+        <p>UX Mastery</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Mental/Conceptual Models</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>What users believe they know about a UI strongly impacts how they use it. Mismatched mental models are common, especially with designs that try something new.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.nngroup.com/articles/mental-models/" target="_blank">Mental Models</a></h4>
+        <p>Nielsen Norman Group</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Metrics Analysis</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Web metrics are a treasure trove of UX data and insights. Used properly, metrics are the ultimate behavioral analysis tool; the trick is to know how to read the data and what it means.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.dtelepathy.com/ux-metrics/" target="_blank">How to Choose the Right UX Metrics for Your Product (presentation)</a></h4>
+        <p>Digital Telepathy</p>
+        
+        <h4><a href="https://library.gv.com/how-to-choose-the-right-ux-metrics-for-your-product-5f46359ab5be" target="_blank">How to choose the right UX metrics for your product</a></h4>
+        <p>Google Ventures</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">Minimum Viable Product (MVP)</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>In product development, the minimum viable product (MVP) is a product which has just enough features to gather validated learning about the product and its continued development.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://scalemybusiness.com/the-ultimate-guide-to-minimum-viable-products/" target="_blank">The Ultimate Guide to Minimum Viable Products</a></h4>
+        <p>Scale My Business</p>
+        
+        <h4><a href="http://theleanstartup.com/principles" target="_blank">The Lean Startup Principles</a></h4>
+        <p>The Lean Startup</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Mobile-First Design</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>By starting mobile first with your responsive website you are able to make the tough decisions about the content.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://bradfrost.com/blog/mobile/the-many-faces-of-mobile-first/" target="_blank">The Many Faces of 'Mobile First'</a></h4>
+        <p>Brad Frost</p>
+        
+        <h4><a href="http://zurb.com/word/mobile-first" target="_blank">Mobile First. An adaptive, future-friendly solution for website design.</a></h4>
+        <p>Zurb University</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Moodboards</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A collaborative collection of assets and patterns that will eventually evolve into a product's visual style guide.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.protofuse.com/blog/how-web-design-mood-board-impacts-ux/" target="_blank">How a Web Design Mood board impacts User Experience Design</a></h4>
+        <p>ProtoFuse</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">Multivariate Testing</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A technique for testing a hypothesis in which multiple variables are modified. The goal of multivariate testing is to determine which combination of variations performs the best out of all of the possible combinations.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.optimizely.com/resources/multivariate-testing/" target="_blank">What is Multivariate Testing?</a></h4>
+        <p>Optimizely</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Architecture</span>
+        <h2 class="title title--full">Ockham’s Razor</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Occam’s Razor, put simply, states: “the simplest solution is almost always the best.” It’s a problem-solving principle arguing that simplicity is better than complexity.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://speckyboy.com/2015/05/21/taking-the-occam-razor-approach-to-design/" target="_blank">Taking the Occam Razor Approach to Design</a></h4>
+        <p>SpeckyBoy Design Magazine</p>
+        
+        <h4><a href="http://www.webdesignerdepot.com/2010/07/occams-razor-a-great-principle-for-designers/" target="_blank">Occam's Razor: A Great Principle for Designers</a></h4>
+        <p>Web Designer Depot</p>
+        
+        <h4><a href="https://www.interaction-design.org/literature/article/occam-s-razor-the-simplest-solution-is-always-the-best" target="_blank">Occam's Razor: The simplest solution is always the best</a></h4>
+        <p>Interaction Design Foundation</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Omni-channel UX</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Multichannel sales approach that provides the customer with an integrated shopping experience. The customer can be shopping online from a desktop or mobile device, or by telephone, or in a bricks and mortar store and the experience would be seamless.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://uxmag.com/articles/5-elements-of-omni-channel-user-experiences" target="_blank">5 Elements of Omni-Channel User Experiences</a></h4>
+        <p>UX Magazine</p>
+        
+        <h4><a href="http://www.humanfactors.com/project/strategy_and_innovation.asp" target="_blank">Omni-Channel UX strategy</a></h4>
+        <p>Human Factors International</p>
+        
+        <h4><a href="http://blog.hubspot.com/marketing/omni-channel-user-experience-examples" target="_blank">7 Inspiring Examples of Omni-Channel User Experiences</a></h4>
+        <p>Hubspot</p>
+        
+        <h4><a href="https://uxmag.com/articles/are-you-ready-to-give-your-customers-an-omni-channel-experience" target="_blank">Are You Ready to Give Your Customers an Omni-Channel Experience?</a></h4>
+        <p>UX Magazine</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Development</span>
+        <h2 class="title title--full">Paper Prototyping</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Variation of usability testing where representative users perform realistic tasks by interacting with a paper version of the interface that is manipulated by a person 'playing computer,' who doesn't explain how the interface is intended to work.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://alistapart.com/article/paperprototyping" target="_blank">Paper Prototyping</a></h4>
+        <p>A List Apart</p>
+        
+        <h4><a href="http://usabilitygeek.com/paper-prototyping-as-a-usability-testing-technique/" target="_blank">Paper Prototyping As A Usability Testing Technique</a></h4>
+        <p>Usability Geek</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">Participatory Design</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Involvement of the stakeholders, designers, researchers and end-users in the design process in order to help ensure that the end product meets the needs of its intended user base.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.uxpassion.com/blog/participatory-design-what-makes-it-great/" target="_blank">Participatory Design: What is it, and what makes it so great?</a></h4>
+        <p>UX Passion</p>
+        
+        <h4><a href="http://www.uxbooth.com/articles/co-creation-designing-with-the-user-for-the-user/" target="_blank">Co-Creation: Designing With the User, For the User</a></h4>
+        <p>UX Booth</p>
+        
+        <h4><a href="https://uxthink.wordpress.com/2010/11/10/participatory-design-research-part-1/" target="_blank">Thinking About Participatory Design Research</a></h4>
+        <p>UX Think</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Development</span>
+        <h2 class="title title--full">Pattern Library</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A formal way of documenting a solution to a common design problem. The idea was introduced by the architect Christopher Alexander for use in urban planning and building architecture, and has been adapted for various other disciplines, including teaching and pedagogy, development organization and process, and software architecture and design.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://uxmovement.com/resources/4-best-design-pattern-libraries/" target="_blank">4 Best User Interface Design Pattern Libraries</a></h4>
+        <p>UX Movement</p>
+        
+        <h4><a href="https://studio.uxpin.com/blog/use-right-ui-design-patterns/" target="_blank">How to Use the Best UI Design Patterns</a></h4>
+        <p>UX Pin</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Personas</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>In user-centered design and marketing, personas are fictional characters created to represent the different user types that might use a site, brand, or product in a similar way.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://uxmag.com/articles/personas-the-foundation-of-a-great-user-experience" target="_blank">Personas: The Foundation of a Great User Experience</a></h4>
+        <p>UX Magazine</p>
+        
+        <h4><a href="http://www.uxbooth.com/articles/creating-personas/" target="_blank">Creating Personas</a></h4>
+        <p>UX Booth</p>
+        
+        <h4><a href="http://uxmastery.com/create-ux-personas/" target="_blank">How To Create UX Personas</a></h4>
+        <p>UX Mastery</p>
+        
+        <h4><a href="https://www.smashingmagazine.com/2014/08/a-closer-look-at-personas-part-1/" target="_blank">A Closer Look At Personas: What They Are And How They Work (Part 1)</a></h4>
+        <p>Smashing Magazine</p>
+        
+        <h4><a href="https://www.smashingmagazine.com/2014/08/a-closer-look-at-personas-part-2/" target="_blank">A Closer Look At Personas: What They Are And How They Work (Part 2)</a></h4>
+        <p>Smashing Magazine</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Progressive Disclosure</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Progressive disclosure is an interaction design technique often used in human computer interaction to help maintain the focus of a user's attention by reducing clutter, confusion, and cognitive workload. This improves usability by presenting only the minimum data required for the task at hand.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://en.wikipedia.org/wiki/Progressive_disclosure" target="_blank">Progressive disclosure</a></h4>
+        <p>Wikipedia</p>
+        
+        <h4><a href="https://www.nngroup.com/articles/progressive-disclosure/" target="_blank">Progressive Disclosure</a></h4>
+        <p>Nielsen Norman Group</p>
+        
+        <h4><a href="https://www.interaction-design.org/literature/book/the-glossary-of-human-computer-interaction/progressive-disclosure" target="_blank">Progressive Disclosure</a></h4>
+        <p>Interaction Design Foundation</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Development</span>
+        <h2 class="title title--full">Progressive Enhancement</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Progressive enhancement is a strategy for web design that emphasizes accessibility, semantic HTML markup, and external stylesheet and scripting technologies.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://en.wikipedia.org/wiki/Progressive_enhancement" target="_blank">Progressive enhancement</a></h4>
+        <p>Wikipedia</p>
+        
+        <h4><a href="http://alistapart.com/article/understandingprogressiveenhancement" target="_blank">Understanding Progressive Enhancement</a></h4>
+        <p>A List Apart</p>
+        
+        <h4><a href="http://blog.teamtreehouse.com/progressive-enhancement-past-present-future" target="_blank">Progressive Enhancement: Past, Present, and Future</a></h4>
+        <p>Treehouse Blog</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Development</span>
+        <h2 class="title title--full">Prototypes</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A simulation of the final product. It’s like an interactive mockup that can have any degree of fidelity. The main purpose of building prototypes is to test whether or not the flow of the product is smooth and consistent.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://uxmag.com/articles/what-a-prototype-is-and-is-not" target="_blank">What a Prototype Is (and Is Not)</a></h4>
+        <p>UX Magazine</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Quantitative Survey</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Quantitative research is about asking people for their opinions in a structured way so that you can produce hard facts and statistics to guide you. To get reliable statistical results, it's important to survey people in fairly large numbers and to make sure they are a representative sample of your target market.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.measuringu.com/blog/five-hard-quant.php" target="_blank">Five Critical Quantitative UX Concepts</a></h4>
+        <p>Measuring U</p>
+        
+        <h4><a href="https://uxmag.com/articles/ten-guidelines-for-quantitative-measurement-of-ux" target="_blank">Ten Guidelines for Quantitative Measurement of UX</a></h4>
+        <p>UX Magazine</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Development</span>
+        <h2 class="title title--full">Rapid Prototyping</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A cyclycal approach towards design that focuses on quickly creating a functional, interactive prototype of a website or web application.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.smashingmagazine.com/2010/06/design-better-faster-with-rapid-prototyping/" target="_blank">Design Better And Faster With Rapid Prototyping</a></h4>
+        <p>Smashing Magazine</p>
+        
+        <h4><a href="http://www.uxforthemasses.com/rapid-prototyping/" target="_blank">Wireframes are dead, long live rapid prototyping</a></h4>
+        <p>UX for the masses</p>
+        
+        <h4><a href="http://www.uxmatters.com/mt/archives/2013/03/are-rapid-prototyping-lean-ux-and-agile-development-good-for-user-experience.php" target="_blank">Are Rapid Prototyping, Lean UX, and Agile Development Good for User Experience?</a></h4>
+        <p>UX Matters</p>
+        
+        <h4><a href="http://blog.invisionapp.com/6-ways-to-save-time-in-rapid-prototyping/" target="_blank">6 Ways to Save Time in Rapid Prototyping</a></h4>
+        <p>Invision Blog</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Reciprocity</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Humans tend to return good deeds: use this social psychology law in user interface design to gain users’ trust and motivate engagement with your site or app.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.nngroup.com/articles/reciprocity-principle/" target="_blank">The Reciprocity Principle: Give Before You Take in Web Design</a></h4>
+        <p>Nielsen norman Group</p>
+        
+        <h4><a href="http://www.uxmatters.com/mt/archives/2013/08/applying-behavioral-principles-to-personalize-content-using-social-media.php" target="_blank">Applying Behavioral Principles to Personalize Content Using Social Media</a></h4>
+        <p>UX Matters</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Recognition over Recall</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Showing users things they can recognize improves usability over needing to recall items from scratch because the extra context helps users retrieve information from memory.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://ui-patterns.com/patterns/Recognition-over-recall" target="_blank">Recognition over recall</a></h4>
+        <p>UI Patterns</p>
+        
+        <h4><a href="http://zurb.com/triggers/recognition-over-recall/gift-card-from-munchery" target="_blank">Recognition Over Recall</a></h4>
+        <p>Zurb University</p>
+        
+        <h4><a href="http://www.doctordisruption.com/design/principles-of-design-38-recognition-over-recall/" target="_blank">Principles of Design 38 – Recognition Over Recall</a></h4>
+        <p>Doctor Disruption</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Responsive Web Design</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Responsive web design (RWD) is an approach to web design aimed at crafting sites to provide an optimal viewing and interaction experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from desktop computer monitors to mobile phones).</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://alistapart.com/article/responsive-web-design" target="_blank">Responsive Web Design</a></h4>
+        <p>A List Apart</p>
+        
+        <h4><a href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/" target="_blank">Responsive Web Design: What It Is and How To Use It</a></h4>
+        <p>Smashing Magazine</p>
+        
+        <h4><a href="http://zellwk.com/blog/from-html-grids-to-css-grids/" target="_blank">Moving from HTML Grid Systems to CSS Grid Systems</a></h4>
+        <p>Zellwk.com</p>
+        
+        <h4><a href="https://www.smashingmagazine.com/2013/07/choosing-a-responsive-image-solution/" target="_blank">Choosing A Responsive Image Solution</a></h4>
+        <p>Smashing Magazine</p>
+        
+        <h4><a href="http://osvaldas.info/flexbox-based-responsive-equal-height-blocks-with-javascript-fallback" target="_blank">Flexbox Based Responsive Equal Height Blocks With JavaScript Fallback</a></h4>
+        <p>osvaldas.info</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Architecture</span>
+        <h2 class="title title--full">Signal-to-Noise Ratio</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Similar to ‘Interference Effects’, this is a measure of how much relevant to irrelevant content you have on a page. More ‘signal’ and less ‘noise’ is better.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.doctordisruption.com/design/principles-of-design-58-signal-to-noise-ratio/" target="_blank">Principles of Design 58 – Signal-to-Noise Ratio</a></h4>
+        <p>Doctor Disruption</p>
+        
+        <h4><a href="http://www.uxbooth.com/articles/designing-for-noise/" target="_blank">Designing for Noise</a></h4>
+        <p>UX Booth</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Architecture</span>
+        <h2 class="title title--full">Sitemap</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A site map (or sitemap) is a list of pages of a web site accessible to crawlers or users. It can be either a document in any form used as a planning tool for Web design, or a Web page that lists the pages on a Web site, typically organized in hierarchical fashion.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://support.google.com/webmasters/answer/156184?hl=en" target="_blank">Learn about sitemaps</a></h4>
+        <p>Google</p>
+        
+        <h4><a href="http://www.sitemaps.org/protocol.html" target="_blank">Sitemaps XML format</a></h4>
+        <p>Sitemaps.org</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Sketch App</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Sketch is built for modern graphic designers, and it shows in every fibre of the app. From a flexible workflow with support for Multiple Pages and Artboards.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.sketchapp.com" target="_blank">Sketch App (website)</a></h4>
+        <p>Sketch App</p>
+        
+        <h4><a href="https://medium.com/sketch-app" target="_blank">All about the Sketch App</a></h4>
+        <p>Medium</p>
+        
+        <h4><a href="http://www.sketchappsources.com" target="_blank">Sketch App Resources (website)</a></h4>
+        <p>Sketch App Resources</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Architecture</span>
+        <h2 class="title title--full">Sketches</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Just like your thoughts and ideas, sketches are in a constant state of flux, evolving and morphing as you reach a potential solution. Don’t think that you have to be able to draw in order to sketch, although having some experience with it does help.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.smashingmagazine.com/2011/12/the-messy-art-of-ux-sketching/" target="_blank">The Messy Art Of UX Sketching</a></h4>
+        <p>Smashing Magazine</p>
+        
+        <h4><a href="http://uxmovement.com/wireframes/why-its-important-to-sketch-before-you-wireframe/" target="_blank">Why It's Important to Sketch Before You Wireframe</a></h4>
+        <p>UX Movement</p>
+        
+        <h4><a href="https://uxmag.com/topics/sketching" target="_blank">Skeching Articles (various)</a></h4>
+        <p>UX Magazine</p>
+        
+        <h4><a href="http://www.uxbooth.com/articles/tools-for-sketching-user-experiences/" target="_blank">Tools for Sketching User Experiences</a></h4>
+        <p>UX Booth</p>
+        
+        <h4><a href="http://www.paulolyslager.com/theory-practice-of-sketching-ux-industry/" target="_blank">The Theory and Practice of Sketching within the UX Industry</a></h4>
+        <p>Paul Olyslager</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Skeuomorphism</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>The design concept of making items represented resemble their real-world counterparts. Skeuomorphism is commonly used in many design fields, including user interface (UI) and Web design, architecture, ceramics and interior design.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://uxmag.com/articles/does-skeuomorphic-design-matter" target="_blank">Does Skeuomorphic Design Matter?</a></h4>
+        <p>UX Magazine</p>
+        
+        <h4><a href="http://uxmovement.com/mobile/skeuomorphic-design-should-convey-functionality/" target="_blank">Skeuomorphic Design Should Convey Functionality</a></h4>
+        <p>UX Movement</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Stakeholders Interviews</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Stakeholder Interviews are conversations an individual conducts with his or her key stakeholder: customers, bosses, subordinates or peers both within and outside the organization. The interviews allow you to step into the shoes of your interviewees and see your role through the eyes of these stakeholders.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.uxmatters.com/mt/archives/2007/09/conducting-successful-interviews-with-project-stakeholders.php" target="_blank">Conducting Successful Interviews With Project Stakeholders</a></h4>
+        <p>UX Matters</p>
+        
+        <h4><a href="https://www.presencing.com/tools/stakeholder-interviews" target="_blank">Stakeholder Interviews</a></h4>
+        <p>Presencing Institute</p>
+        
+        <h4><a href="http://www.uxapprentice.com/resources/stakeholder-interview-template/" target="_blank">Stakeholder Interview Template</a></h4>
+        <p>UX Apprentice</p>
+        
+        <h4><a href="http://www.userfocus.co.uk/articles/conducting-an-effective-stakeholder-interview.html" target="_blank">Conducting an effective stakeholder interview</a></h4>
+        <p>UserFocus</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Storyboards</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A storyboard is a technique for illustrating an interaction between a person and a product (or multiple people and multiple products) in narrative format, which includes a series of drawings, sketches, or pictures and sometimes words that tell a story.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.fastcodesign.com/1672917/the-8-steps-to-creating-a-great-storyboard" target="_blank">The 8 Steps To Creating A Great Storyboard</a></h4>
+        <p>FastCo Design</p>
+        
+        <h4><a href="https://uxmag.com/articles/storyboarding-in-the-software-design-process" target="_blank">Storyboarding in the Software Design Process</a></h4>
+        <p>UX Magazine</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Style Tiles</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Style Tiles are a design deliverable consisting of fonts, colors and interface elements that communicate the essence of a visual brand for the web.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://styletil.es" target="_blank">Style Tiles (website)</a></h4>
+        <p>Style Tiles</p>
+        
+        <h4><a href="http://designshack.net/articles/graphics/style-tiles-the-flip-side-of-wireframes/" target="_blank">tyle Tiles: The Flip Side of Wireframes</a></h4>
+        <p>Design Shack</p>
+        
+        <h4><a href="http://www.anotheruiguy.com/ux-design-dev/_book/ux/style-tiles.html" target="_blank">Style Tiles and How They Work</a></h4>
+        <p>Another UI Guy</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Styleguides</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A style guide (or manual of style) is a set of standards for the writing and design of documents, either for general use or for a specific publication, organization, or field. (It is often called a style sheet, though that term has other meanings.)</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://styleguides.io" target="_blank">Website Style Guide Resources (website)</a></h4>
+        <p>Brad Frost</p>
+        
+        <h4><a href="http://www.theuxbookmark.com/2010/08/ux-articles-and-research-papers/creative-design/a-monster-list-of-ui-guidelines-style-guides/" target="_blank">A huge list of Style Guides and UI Guidelines</a></h4>
+        <p>The UX Bookmark</p>
+        
+        <h4><a href="https://uxmag.com/articles/the-elements-of-a-style-guide" target="_blank">The Elements of a Style Guide</a></h4>
+        <p>UX Magazine</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">Task Analysis</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Task analysis is a step-by-step analysis of the users’ task, from their perspective.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://searchenginewatch.com/sew/how-to/2336547/task-analysis-the-key-ux-design-step-everyone-skips" target="_blank">Task Analysis: The Key UX Design Step Everyone Skips</a></h4>
+        <p>Search Engine Watch</p>
+        
+        <h4><a href="http://www.uxmatters.com/mt/archives/2010/02/hierarchical-task-analysis.php" target="_blank">Hierarchical Task Analysis</a></h4>
+        <p>UX Matters</p>
+        
+        <h4><a href="https://www.interaction-design.org/literature/article/task-analysis-a-ux-designer-s-best-friend" target="_blank">Task Analysis a UX Designer's Best Friend</a></h4>
+        <p>Interaction Design Foundation</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Architecture</span>
+        <h2 class="title title--full">Taxonomies</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>An exploration around multiple ways to categorize and structure content and data.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.enterprise-knowledge.com/taxonomy-consulting-and-the-importance-of-ux-design/" target="_blank">Taxonomy Consulting and the Importance of UX Design</a></h4>
+        <p>Enterprise Knowledge</p>
+        
+        <h4><a href="http://marketingland.com/website-taxonomy-guidelines-tips-127706" target="_blank">Website Taxonomy Guidelines And Tips: How Best To Organize Your Site</a></h4>
+        <p>Marketing Land</p>
+        
+        <h4><a href="http://www.matrixgroup.net/thematrixfiles/blog/what-is-a-taxonomy/" target="_blank">What Is a Taxonomy and Why Does Your Site Need One?</a></h4>
+        <p>The Matrix Files</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Think-Aloud Protocol</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Think-aloud protocol (or thinking aloud; also talk-aloud protocol) is a protocol used to gather data in usability testing in product design and development, in psychology and a range of social sciences (e.g., reading, writing, translation research, decision making, and process tracing).</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.nngroup.com/articles/thinking-aloud-the-1-usability-tool/" target="_blank">Thinking Aloud: The Number 1 Usability Tool</a></h4>
+        <p>Nielsen Norman Group</p>
+        
+        <h4><a href="http://www.uxmatters.com/mt/archives/2012/03/talking-out-loud-is-not-the-same-as-thinking-aloud.php" target="_blank">Talking Out Loud Is Not the Same as Thinking Aloud</a></h4>
+        <p>UX Matters</p>
+        
+        <h4><a href="https://en.wikipedia.org/wiki/Think_aloud_protocol" target="_blank">Think aloud protocol</a></h4>
+        <p>Wikipedia</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Architecture</span>
+        <h2 class="title title--full">URL-First Design</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>URLs should be designed in the early stages of website development as users must be able to read, guess and edit them, and it helps designers to define site structure.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://flywebmedia.com/url-first-design/" target="_blank">URL first design</a></h4>
+        <p>Flyweb Media</p>
+        
+        <h4><a href="https://www.smashingmagazine.com/2014/05/responsive-design-begins-with-the-url/" target="_blank">Responsive Design Begins With The URL</a></h4>
+        <p>Smashing Magazine</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Development</span>
+        <h2 class="title title--full">Usability</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Web usability is the ease of use of a website. Some broad goals of usability are the presentation of information and choices in a clear and concise way, a lack of ambiguity and the placement of important items in appropriate areas.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.usability.gov" target="_blank">Usability.gov website</a></h4>
+        <p>Usability.gov</p>
+        
+        <h4><a href="https://www.nngroup.com/articles/usability-101-introduction-to-usability/" target="_blank">Usability 101: Introduction to Usability</a></h4>
+        <p>Nielsen Norman Group</p>
+        
+        <h4><a href="http://bosmol.com/2014/02/website-usability-virtual-elephants-of-the-internet-room.html" target="_blank">Website Usability: Virtual Elephants of the Internet Room</a></h4>
+        <p>Bosmol Social Media News</p>
+        
+        <h4><a href="http://www.nickkolenda.com/user-experience/" target="_blank">125 Easy Tweaks to Optimize Your Website’s Usability Today</a></h4>
+        <p>Nick Kolenda</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">Usability Testing</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Usability testing is the best way to understand how real users experience your website or application. Unlike interviews or focus groups that attempt to get users to accurately self-report their own behavior or preferences, a well-designed user test measures actual performance on mission-critical tasks.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="http://www.usabilityfirst.com/usability-methods/usability-testing/" target="_blank">Usability Testing</a></h4>
+        <p>Usability First</p>
+        
+        <h4><a href="https://www.nngroup.com/reports/how-to-conduct-usability-studies/" target="_blank">How to Conduct Usability Studies</a></h4>
+        <p>Nielsen Norman Group</p>
+        
+        <h4><a href="https://www.nngroup.com/articles/task-scenarios-usability-testing/" target="_blank">Turn User Goals into Task Scenarios for Usability Testing</a></h4>
+        <p>Nielsen Norman Group</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">Use Cases and Scenarios</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>List of actions or event steps, typically defining the interactions between a role (known in the Unified Modeling Language as an actor) and a system, to achieve a goal.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://en.wikipedia.org/wiki/Use_case" target="_blank">Use case</a></h4>
+        <p>Wikipedia</p>
+        
+        <h4><a href="http://tynerblain.com/blog/2007/04/10/what-are-use-case-scenarios/" target="_blank">What Are Use Case Scenarios?</a></h4>
+        <p>Tyner Blain</p>
+        
+        <h4><a href="http://www.watermarklearning.com/blog/scenarios-and-use-cases/" target="_blank">Scenarios and Use Cases – Useful Techniques</a></h4>
+        <p>Watermark Learning</p>
+        
+        <h4><a href="https://www.ivarjacobson.com/publications/white-papers/use-case-ebook" target="_blank">Use Case 2.0 eBook (download)</a></h4>
+        <p>Ivar Jacobson International</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">User-Centered Design (UCD)</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>The design is based upon an explicit understanding of users, tasks and environments. Users are involved throughout design and development. The design is driven and refined by user-centered evaluation. The process is iterative.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://en.wikipedia.org/wiki/User-centered_design" target="_blank">User-Centered Design</a></h4>
+        <p>Wikipedia</p>
+        
+        <h4><a href="http://www.usabilityfirst.com/about-usability/introduction-to-user-centered-design/" target="_blank">Introduction to User-Centered Design</a></h4>
+        <p>Usability First</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">User Flow</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A user flow is a collection of Web pages that define a logical task. It consists of a number of steps that need to be performed in order to complete the task.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://studio.uxpin.com/blog/creating-perfect-user-flows-for-smooth-ux/" target="_blank">Creating Perfect User Flows for Smooth UX</a></h4>
+        <p>UXPin</p>
+        
+        <h4><a href="https://www.smashingmagazine.com/2012/01/stop-designing-pages-start-designing-flows/" target="_blank">Stop Designing Pages And Start Designing Flows</a></h4>
+        <p>Smashing Magazine</p>
+        
+        <h4><a href="http://conversionxl.com/how-to-design-user-flow/" target="_blank">Build It With The User in Mind: How to Design User Flow</a></h4>
+        <p>ConversionXL</p>
+        
+        <h4><a href="http://docs.oracle.com/cd/E22345_01/doc.111/e22309/userflows.htm" target="_blank">Working with User Flows</a></h4>
+        <p>Oracle Real User Experience Insight User's Guide</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Management</span>
+        <h2 class="title title--full">User Stories</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>User stories are part of an agile approach that helps shift the focus from writing about requirements to talking about them. All agile user stories include a written sentence or two and, more importantly, a series of conversations about the desired functionality.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.mountaingoatsoftware.com/agile/user-stories" target="_blank">User Stories</a></h4>
+        <p>Mountain Goat Software</p>
+        
+        <h4><a href="http://www.agilemodeling.com/artifacts/userStory.htm" target="_blank">User Stories: An Agile Introduction</a></h4>
+        <p>Agile Modeling</p>
+        
+        <h4><a href="https://en.wikipedia.org/wiki/User_story" target="_blank">User Story</a></h4>
+        <p>Wikipedia</p>
+        
+        <h4><a href="http://guide.agilealliance.org/guide/user-stories.html" target="_blank">Glossary: User Stories</a></h4>
+        <p>Agile Alliance</p>
+        
+        <h4><a href="http://www.romanpichler.com/blog/10-tips-writing-good-user-stories/" target="_blank">10 Tips for Writing Good User Stories</a></h4>
+        <p>Pichler Consulting</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Strategy</span>
+        <h2 class="title title--full">Value Proposition</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A value proposition is a promise of value to be delivered and acknowledged and a belief from the customer that value will be delivered and experienced. A value proposition can apply to an entire organization, or parts thereof, or customer accounts, or products or services.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://en.wikipedia.org/wiki/Value_proposition" target="_blank">Value proposition</a></h4>
+        <p>Wikipedia</p>
+        
+        <h4><a href="http://conversionxl.com/value-proposition-examples-how-to-create/" target="_blank">Useful Value Proposition Examples (and How to Create a Good One)</a></h4>
+        <p>ConversionXL</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Design</span>
+        <h2 class="title title--full">Visual Weight</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>The notion that design elements have varied weights; that is, some objects, even on a two-dimensional medium, can appear to be heavier than others. Visual weight is a powerful concept that allows us to create visual hierarchy, symmetry, balance, and harmony in designs.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://www.smashingmagazine.com/2014/12/design-principles-visual-weight-direction/" target="_blank">Design Principles: Visual Weight And Direction</a></h4>
+        <p>Smashing Magazine</p>
+        
+        <h4><a href="http://sixrevisions.com/graphics-design/visual-weight-designs/" target="_blank">Working with Visual Weight in Your Designs</a></h4>
+        <p>Six Revisions</p>
+        
+        <h4><a href="http://zurb.com/word/visual-weight" target="_blank">Visual Weight</a></h4>
+        <p>Zurb University</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Development</span>
+        <h2 class="title title--full">Web Accessibility</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>Web accessibility refers to the inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities. When sites are correctly designed, developed and edited, all users have equal access to information and functionality.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://en.wikipedia.org/wiki/Web_accessibility" target="_blank">Web accessibility</a></h4>
+        <p>Wikipedia</p>
+        
+        <h4><a href="https://www.w3.org/WAI/intro/accessibility.php" target="_blank">Introduction to Web Accessibility</a></h4>
+        <p>W3C</p>
+        
+        <h4><a href="http://webaim.org/intro/" target="_blank">Introduction to Web Accessibility</a></h4>
+        <p>WebAIM</p>
+        
+      </article>
+      
+      
+      <article class="content__item">
+        <span class="category category--full">Development</span>
+        <h2 class="title title--full">Wireframes</h2>
+        <div class="meta meta--full">
+        </div>
+        <p>A website wireframe, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website.</p>
+        <h3 class="title">Resources</h3>
+        
+        <h4><a href="https://en.wikipedia.org/wiki/Website_wireframe" target="_blank">Website wireframe</a></h4>
+        <p>Wikipedia</p>
+        
+        <h4><a href="http://www.usability.gov/how-to-and-tools/methods/wireframing.html" target="_blank">Wireframing</a></h4>
+        <p>Usability.gov</p>
+        
+        <h4><a href="http://webdesign.tutsplus.com/articles/a-beginners-guide-to-wireframing--webdesign-7399" target="_blank">A Beginner's Guide to Wireframing</a></h4>
+        <p>Envato tutsplus</p>
+        
+      </article>
+      
     </div>
     <button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>
   </section>
 </div>
+
+      </main>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="/assets/vendor.js"></script>
+  <script type="text/javascript" src="/assets/application.js"></script>
+
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-76489278-1','auto');ga('send','pageview');
+  </script>
+</body>
+</html>
